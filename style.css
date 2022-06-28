@@ -1,4 +1,47 @@
-/* Reset properties */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-1: 6.4rem;
+    --fs-2: 4.8rem;                                       /* fs = font size */
+    --fs-3: 4rem;
+    --fs-4: 3.2rem;
+    --fs-overline: 1.6rem;
+    --fs-p1: 1.8rem;
+    --fs-p2: 1.6rem;
+
+    --lh-1: 6.4rem;
+    --lh-2: 4.8rem;
+    --lh-3: 4.4rem;
+    --lh-4: 3.6rem;
+    --lh-5: 2.6rem;
+
+    --ff: "Red Hat Display", sans-serif;
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    
+    --clr-dark-cyan: #4D96A9;
+    --clr-dark-purple: #855FB1;
+    --clr-dark-deep-purple: #28283D;
+    --clr-dark-grey: #87879D;
+
+    --clr-med-cyan: #71C0D4;
+    --clr-med-purple: #B18BDD;
+
+    --clr-light-cyan: #8FE3F9;
+    --clr-light-purple: #D9B8FF;
+    --clr-light-white: #FAFAFA;
+    
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+    
+  }
+
+  /* Reset and Global properties */
 *,
 *::before,
 *::after {
@@ -10,49 +53,27 @@ html {
     scroll-behavior: smooth;
 }
 
-body,
-main,
-h1, h2, h3,
-p {
-    margin: 0;
+body {
+  background-color: var(--clr-light-white);
+  color: var(--clr-dark-grey);
+  font-family: var(--ff);
+  cursor: default;
 }
-
-  
-/* Custom Properties */
-  :root {
-    
-    font-size: 10px;
-    --fs-0: 3.8rem;
-    --fs-1: 3.2rem;
-    --fs-2: 2.8rem;                                       /* fs = font size */
-    --fs-3: 2.6rem;
-    --fs-4: 2.2rem;
-    --fs-p: 1.5rem;
-
-    --ff: 'Fira Sans', sans-serif;
-    --fw-n: 300;
-    --fw-m: 600;
-    --fw-b: 800;
-
-    
-    --clr-dark-cyan: #4D96A9;
-    --clr-dark-purple: #855FB1;
-    --clr-dark-deep-purple: #28283D;
-    --clr-dark-grey: #87879D;
-
-    --clr-light-cyan: #8FE3F9;
-    --clr-light-purple: #D9B8FF;
-    --clr-light-white: #FAFAFA;
-  
-    --spacer: 1rem;
-    --spacer-md: calc(var(--spacer) * 2);
-    --spacer-lg: calc(var(--spacer) * 3);
-    
-    --shadow: 0 0 1em rgba(0,0,0, .25);
-    --br: 5px;
-    
-  }
-
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
 
 /* General styles */
 
@@ -61,3 +82,87 @@ img {
 }
 
 /* General typography */
+h1 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-3);
+  color: var(--clr-dark-deep-purple);
+}
+h2 {
+  font-size: var(--fs-4);
+  line-height: -4;
+  color: var(--clr-dark-deep-purple);
+}
+p {
+  font-size: var(--fs-p2);
+  line-height: var(--lh-5);
+}
+.overline {
+  font-size: var(--fs-overline);
+  line-height: var(--lh-5);
+  color: var(--clr-dark-cyan);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Buttons */
+.btn {
+  color: white;
+  font-size: var(--fs-p2);
+  line-height: var(--lh-5);
+  width: 19.3rem;
+  height: 5.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.9rem;
+  transition: 0.3s;
+}
+.btn-dload {
+  background-color: var(--clr-dark-cyan);
+}
+.btn-dload .version {
+  color: var(--clr-light-cyan);
+}
+.btn-dload:hover {
+  background-color: var(--clr-med-cyan);
+  transition: 0.2s;
+}
+.btn-dload:focus {
+  outline: 2px solid var(--clr-light-cyan);
+  transition: none;
+}
+.btn-dload:active {
+  background-color: var(--clr-med-cyan);
+  color: var(--clr-light-white);
+}
+.btn-whatis,
+.footer__btn-dload {
+  background-color: var(--clr-dark-purple);
+}
+.btn-whatis:hover {
+  background-color: var(--clr-med-purple);
+  transition: 0.2s;
+}
+.btn-whatis:focus {
+  outline: 2px solid var(--clr-light-purple);
+  transition: none;
+}
+.btn-whatis:active {
+  background-color: var(--clr-med-purple);
+  color: var(--clr-light-white);
+}
+.footer__btn-dload .version {
+  color: var(--clr-light-purple);
+}
+.footer__btn-dload:hover {
+  background-color: var(--clr-med-purple);
+  transition: 0.2s;
+}
+.footer__btn-dload:focus {
+  outline: 2px solid var(--clr-light-purple);
+  transition: none;
+}
+.footer__btn-dload:active {
+  background-color: var(--clr-med-purple);
+  color: var(--clr-light-white);
+}
