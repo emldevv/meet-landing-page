@@ -1,0 +1,63 @@
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
+
+  
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-0: 3.8rem;
+    --fs-1: 3.2rem;
+    --fs-2: 2.8rem;                                       /* fs = font size */
+    --fs-3: 2.6rem;
+    --fs-4: 2.2rem;
+    --fs-p: 1.5rem;
+
+    --ff: 'Fira Sans', sans-serif;
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    
+    --clr-dark-cyan: #4D96A9;
+    --clr-dark-purple: #855FB1;
+    --clr-dark-deep-purple: #28283D;
+    --clr-dark-grey: #87879D;
+
+    --clr-light-cyan: #8FE3F9;
+    --clr-light-purple: #D9B8FF;
+    --clr-light-white: #FAFAFA;
+  
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+    
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+    
+  }
+
+
+/* General styles */
+
+img {
+    max-width: 100%;
+}
+
+/* General typography */
