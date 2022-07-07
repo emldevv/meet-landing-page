@@ -20,8 +20,8 @@
 
     --ff: "Red Hat Display", sans-serif;
     --fw-n: 300;
-    --fw-m: 600;
-    --fw-b: 800;
+    --fw-m: 500;
+    --fw-b: 900;
 
     
     --clr-dark-cyan: #4D96A9;
@@ -84,26 +84,35 @@ img {
 /* General typography */
 h1 {
   font-size: var(--fs-3);
+  font-weight: var(--fw-b);
   line-height: var(--lh-3);
   color: var(--clr-dark-deep-purple);
 }
 h2 {
   font-size: var(--fs-4);
-  line-height: -4;
+  font-weight: var(--fw-b);
+  line-height: var(--lh-4);
   color: var(--clr-dark-deep-purple);
 }
 p {
   font-size: var(--fs-p2);
+  font-weight: var(--fw-m);
   line-height: var(--lh-5);
+  color: var(--clr-dark-grey);
 }
 .overline {
   font-size: var(--fs-overline);
+  font-weight: var(--fw-b);
   line-height: var(--lh-5);
   color: var(--clr-dark-cyan);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
+/* Containers */
+.container {
+  margin: 0 2.4rem
+}
 /* Buttons */
 .btn {
   color: white;
@@ -116,4 +125,16 @@ p {
   align-items: center;
   border-radius: 2.9rem;
   transition: 0.3s;
+}
+
+/* Header */
+
+/* Hero */
+
+/* Info */
+
+/* Footer */
+.footer__container p {
+  font-size: var(--fs-p1);
+  color: var(--clr-light-white);
 }
