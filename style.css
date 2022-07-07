@@ -143,6 +143,11 @@ p {
 
 /* Containers */
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 0 2.4rem
 }
 @media (min-width: 600px) {
@@ -156,6 +161,7 @@ p {
   color: white;
   font-size: var(--fs-p2);
   line-height: var(--lh-5);
+  font-weight: var(--fw-b);
   width: 19.3rem;
   height: 5.8rem;
   display: flex;
@@ -166,9 +172,41 @@ p {
 }
 
 /* Header */
-
+.header__container {
+  margin: 4.8rem 0;
+}
 /* Hero */
-
+.hero__img {
+  background: url(assets/tablet/image-hero.png) no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  height: 15.3rem;
+  width: 41.4rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+.hero__header {
+  margin-top: 4.8rem;
+}
+.hero__description {
+  margin: 3rem 0;
+}
+.hero__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-dload {
+  background-color: var(--clr-dark-cyan);
+  margin-bottom: 1.5rem;
+}
+.version {
+  color: var(--clr-light-cyan);
+}
+.btn-whatis {
+  background-color: var(--clr-dark-purple);
+  width: 13.9rem;
+}
 /* Info */
 
 /* Footer */
