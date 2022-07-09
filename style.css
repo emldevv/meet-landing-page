@@ -148,6 +148,7 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;;
   margin: 0 2.4rem
 }
 @media (min-width: 600px) {
@@ -206,11 +207,72 @@ p {
 .btn-whatis {
   background-color: var(--clr-dark-purple);
   width: 13.9rem;
+  margin-bottom: 5rem;
 }
 /* Info */
-
+.marker-line {
+  width: 1px;
+  height: 84px;
+  left: calc(50% - 0.5px);
+  background-color: var(--clr-dark-grey);
+  opacity: 0.25;
+}
+.marker-circle {
+  content: "01";
+  color: var(--clr-dark-grey);
+  font-weight: var(--fw-b);
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+}
+/* .info__container::before {
+  content: "";
+  width: 1px;
+  height: 84px;
+  left: calc(50% - 0.5px);
+  background-color: var(--clr-dark-grey);
+  opacity: 0.25;
+}
+.info__container::after {
+  content: "01";
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -74rem;
+  left: 2.8rem;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-light-white);
+  color: var(--clr-dark-grey);
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  justify-content: center;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+} */
+.info__imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+  margin: 5rem 0;
+}
+.info__img-wrapper img {
+  border-radius: 1rem;
+}
+.overline {
+  display: inline-block; /*switches to control span gap */
+  margin-bottom: 2.4rem;
+}
+.info__text p {
+  margin: 3.2rem;
+}
 /* Footer */
 .footer__container p {
   font-size: var(--fs-p1);
   color: var(--clr-light-white);
 }
+
+/* Need to insert a img div for background image and then look at the "01/02" images */
